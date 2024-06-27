@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <input type="text" id="tela" readonly>
+        <input type="hidden" id="calculo">
+
+        <section class="linha">
+            <div class="teclas" onclick="limparTela()">
+                <p>AC</p>
+            </div>
+            <div class="teclas" onclick="adicionarAoQuadrado('²')">
+                <p>x²</p>
+            </div>
+            <div class="teclas" onclick="adicionarPorcentagem('%')">
+                <p>%</p>
+            </div>
+            <div class="teclas_especiais" onclick="adicionarValor('/')">
+                <p>/</p>
+            </div>
+        </section>
+
+        <section class="linha">
+            <div class="teclas" onclick="adicionarValor('7')">
+                <p>7</p>
+            </div>
+            <div class="teclas" onclick="adicionarValor('8')">
+                <p>8</p>
+            </div>
+            <div class="teclas" onclick="adicionarValor('9')">
+                <p>9</p>
+            </div>
+            <div class="teclas_especiais" onclick="adicionarValor('*')">
+                <p>*</p>
+            </div>
+        </section>
+
+        <section class="linha">
+            <div class="teclas" onclick="adicionarValor('4')">
+                <p>4</p>
+            </div>
+            <div class="teclas" onclick="adicionarValor('5')">
+                <p>5</p>
+            </div>
+            <div class="teclas" onclick="adicionarValor('6')">
+                <p>6</p>
+            </div>
+            <div class="teclas_especiais" onclick="adicionarValor('-')">
+                <p>-</p>
+            </div>
+        </section>
+
+        <section class="linha">
+            <div class="teclas" onclick="adicionarValor('1')">
+                <p>1</p>
+            </div>
+            <div class="teclas" onclick="adicionarValor('2')">
+                <p>2</p>
+            </div>
+            <div class="teclas" onclick="adicionarValor('3')">
+                <p>3</p>
+            </div>
+            <div class="teclas_especiais" onclick="adicionarValor('+')">
+                <p>+</p>
+            </div>
+        </section>
+
+        <section class="linha">
+            <div class="teclas" onclick="adicionarValor('0')" id="tecla_zero">
+                <p>0</p>
+            </div>
+            <div class="teclas" onclick="adicionarValor('.')">
+                <p>.</p>
+            </div>
+            <div class="teclas_especiais" onclick="executarCalculo()">
+                <p>=</p>
+            </div>
+        </section>
+
+    </main>
+
+
+</body>
+<script src="script.js"></script>
+
+</html>

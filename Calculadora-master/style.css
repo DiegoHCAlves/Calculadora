@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #feffd6;
+    width: 30%;
+    height: 80%;
+    border: 2px solid #feffd6;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px black;
+}
+
+#tela {
+    height: 15%;
+    width: 95%;
+    background-color: #fbf8df;
+    margin: 10px auto 0 auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 55px;
+    padding-right: 15px;
+    text-align: right;
+}
+
+.linha {
+    height: 16%;
+    margin: 1% auto auto auto;
+    border: 2px solid transparent;
+    display: flex;
+    justify-content: center;
+}
+
+.teclas,
+.teclas_especiais {
+    width: 19%;
+    height: 90%;
+    background-color: #010002;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: monospace;
+    font-size: 40px;
+    transition: background-color 0.1s;
+}
+
+.teclas:hover {
+    background-color: #5bb7b6;
+    cursor: pointer;
+}
+
+.teclas_especiais {
+    background-color: #e85a50;
+}
+
+.teclas_especiais:hover {
+    background-color: #5bb7b6;
+    cursor: pointer;
+}
+
+#tecla_zero {
+    width: 45%;
+    border-radius: 25px 25px 25px 25px;
+}
